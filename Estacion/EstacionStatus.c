@@ -1,4 +1,4 @@
-#include "estacion_status.h"
+#include "EstacionStatus.h"
 
 // Esta es la funcion que me pasa esos numeros de error a texto (string)
 const char* estacion_status_str(EstacionStatus status) {

@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <time.h>
-#include "estacion_status.h"
+#include "EstacionStatus.h"
 #include <stdlib.h>
 
 // Definición de la estructura
@@ -21,7 +21,7 @@ typedef struct {
 /*
     Para lo que son las variables establecimos unos rangos, para que la información sea realmente confiable(real). 
     En este sentido, para cada una de las variables mostraremos a continuación las reglas que ya hemos establecido:
-    
+
     1) Latitud - [-90,90]
     2) Longitud - [-180,180]
     3) Temperatura - [-100,100] 
