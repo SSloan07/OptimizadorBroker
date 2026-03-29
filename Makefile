@@ -1,8 +1,8 @@
-
-# Compilador y flags
+# Compilador
 
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
+
 
 # Archivos fuente
 
@@ -10,25 +10,28 @@ SRC = main.c \
       Estacion/Estacion.c \
       Estacion/EstacionStatus.c \
       Algoritmos/HashTable/HashTable.c \
-      Core/EstructuraOps.c\
-      Core/GeneradorDatos.c
+      Algoritmos/B+Tree/B+Tree.c \
+      Algoritmos/B+Tree/B+TreeNode.c \
+      Core/EstructuraOps.c \
+      Core/GeneradorDatos.c \
+      Core/MotorConsultas.c
+
 
 # Ejecutable
 
 TARGET = programa
 
-# Regla principal
+# Reglas
 
-run: $(TARGET)
+all: $(TARGET)
 
 $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
 
-# Limpiar
+run: $(TARGET)
+	./$(TARGET)
 
 clean:
 	rm -f $(TARGET)
-
-# Recompilar
 
 re: clean all

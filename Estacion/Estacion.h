@@ -8,7 +8,7 @@
 
 // Definición de la estructura
 
-typedef struct {
+typedef struct Estacion{
     uint64_t id_estacion;
     double latitud;
     double longitud;
