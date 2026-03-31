@@ -10,7 +10,6 @@
 
 GraphNode* benchmark_graph(Estacion *datos, int n, double lat, double lon) {
 
-    printf("\n=== GRAPH ===\n");
 
     // Crear grafo
     Graph *g = graph_crear(n);

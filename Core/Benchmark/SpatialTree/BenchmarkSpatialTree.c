@@ -9,8 +9,6 @@
 
 Estacion* benchmark_spatial(Estacion *datos, int n, double lat, double lon) {
 
-    printf("\n=== SPATIAL TREE ===\n");
-
     // Crear árbol
     SpatialTree *spt = spt_crear(-90, 90, -180, 180);
 

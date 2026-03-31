@@ -9,8 +9,6 @@
 
 Estacion* benchmark_bptree(Estacion *datos, int n, double lat, double lon) {
 
-    printf("\n=== B+ TREE ===\n");
-
     // Crear estructura
     BPlusTree *bpt = bpt_crear();
 

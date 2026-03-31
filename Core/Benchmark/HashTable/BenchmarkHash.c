@@ -8,7 +8,6 @@
 
 Estacion* benchmark_hash(Estacion *datos, int n) {
 
-    printf("\n=== HASH TABLE ===\n");
 
     HashTable *ht = ht_crear();
 
